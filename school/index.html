@@ -1,71 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>박용준</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>박용준</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div id="wrap">
-        <header>
-            <a href="#" id="logo">
+  <div id="wrap">
+    <header>
+      <a href="#" id="logo">
                 <img src="./image/logo.png" alt="logo">
             </a>
-            <form action="" id="search_form">
-                <input type="text" name="search" placeholder="search.." id="search_box">
-                <button id="search" type="submit"><img src="./image/dot.gif" alt="돋보기"></button>
-            </form>
-            <nav>
-                <ul>
-                    <li><a href="#">사이트맵</a></li>
-                    <li><a href="#">홈</a></li>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                </ul>
-            </nav>
+      <form action="" id="search_form" method="get">
+        <input type="text" name="search" placeholder="search.." id="search_box">
+        <button id="search" type="submit"><img src="./image/dot.gif" alt="돋보기"></button>
+      </form>
+      <nav>
+        <ul>
+          <li><a href="#">사이트맵</a></li>
+          <li><a href="#">홈</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </nav>
 
-        </header>
-        <div id="subheader">
-
-        </div>
-        <!-- <img src="./image/arrow.jpg" alt="arrow" id="larrow"> -->
-        <!-- <img src="./image/arrow.jpg" alt="arrow" id="rarrow"> -->
-        <div id="visual">
-            <div id="vtext">WELCOME!</div>
-            <img src="./image/1img.jpg" alt="1">
-            <img src="./image/2img.jpg" alt="2">
-            <img src="./image/3img.jpg" alt="3">
-        </div>
-        <section>
-          <table id="notice">
-            <colgroup>
-              <col span="1" style="width:70%;">
-              <col span="1" style="width:30%;">
-            </colgroup>
-            <thead>
-              <tr>
-                <th>공지사항</th>
-                <th><a href="#"><button id="more">더보기</button></a></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="title">제목제목제목제목제목제목제목제목제목제목제목제목제목제목</td>
-                <td>날짜날짜</td>
-              </tr>
-            </tbody>
-            <tfoot>
-
-            </tfoot>
-          </table>
-        </section>
-        <footer>
-          copyright(c) 2018박용준
-        </footer>
+    </header>
+    <div id="subheader">
+      <ul>
+        <li><a href="#">학교소개</a></li>
+        <li>
+          <a href="#">알림마당</a>
+        </li>
+        <li>
+          <a href="#">자유게시판</a>
+        </li>
+        <li>
+          <a href="#">학생마당</a>
+        </li>
+        <li>
+          <a href="#">학교평가</a>
+        </li>
+      </ul>
     </div>
-    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="./js/script.js"></script>
+    <div id="visual">
+      <div id="vtext">WELCOME!</div>
+      <img src="./image/1img.jpg" alt="1">
+      <img src="./image/2img.jpg" alt="2">
+      <img src="./image/3img.jpg" alt="3">
+    </div>
+    <section>
+      <table id="notice">
+        <colgroup>
+          <col span="1" style="width:70%;">
+          <col span="1" style="width:30%;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="title">공지사항</th>
+            <th><a href="#"><button id="more">더보기</button></a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="title">제목제목제목제목제목제목제목제목제목제목제목제목제목제목</td>
+            <td>날짜날짜</td>
+          </tr>
+          <tr>
+            <td class="title">박용준 박용준</td>
+            <td>2018-04-16</td>
+          </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+      </table>
+      <table id="gt">
+        <colgroup>
+          <col span="1" style="width:70%;">
+          <col span="1" style="width:30%;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="title">가정통신문</th>
+            <th><a href="#"><button id="more">더보기</button></a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="title">제목제목제목제목제목제목제목제목제목제목제목제목제목제목</td>
+            <td>날짜날짜</td>
+          </tr>
+          <tr>
+            <td class="title">급식표 배부</td>
+            <td>2018-04-16</td>
+          </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+      </table>
+      <div id="food">
+        <div id="f_head">
+        <span id="f_id">Today's 급식</span>
+        <a href="./food.php" id="f_plus"><img src="./image/plus.png" alt=""></a>
+        </div>
+        <div id="f_imgbox"><img src="./image/food.jpg" alt=""></div>
+        <div id="f_box">
+          <p>2018-04-16 (월)</p>
+          치즈스파게티, 쌕쌕, 보쌈, BBQ황금올리브치킨, 역전우동
+        </div>
+
+      </div>
+    </section>
+    <footer>
+      copyright(c) 2018박용준
+    </footer>
+  </div>
+  <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

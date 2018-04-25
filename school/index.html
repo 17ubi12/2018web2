@@ -11,14 +11,14 @@
 
 <body>
   <div id="popup_box">
-    <!-- <div id="popup_head">
+    <div id="popup_head">
       <span>Today's 급식</span>
       <span></span>
-    </div> -->
+    </div>
     <img src="./image/food.jpg" alt="popupimg" id="popup_img">
     <div id="comment_box">
       <input type="text" placeholder="Write a comment">
-      <a href="#">작성</a>
+      <a href="#" class="btn write">작성</a>
     </div>
   </div>
   <div id="popup_mask"></div>
@@ -29,7 +29,7 @@
             </a>
       <form action="./index.html'" id="search_form" method="get">
         <input type="text" name="search" placeholder="search.." id="search_box">
-        <button id="search" type="submit"><img src="./image/dot.gif" alt="돋보기"></button>
+        <a id="search" href="#"><img src="./image/dot.gif" alt="돋보기"></a>
       </form>
       <nav>
         <ul>
@@ -46,19 +46,19 @@
         <li>
           <a href="#">학교소개</a>
           <ul>
-            <li>설립정신</li>
-            <li>학교장 인사말</li>
-            <li>학교연혁</li>
-            <li>교육 목표</li>
+            <li><a href="">설립정신</a></li>
+            <li><a href="">학교장 인사말</a></li>
+            <li><a href="">학교연혁</a></li>
+            <li><a href="#">교육 목표</a></li>
           </ul>
         </li>
         <li>
           <a href="#">알림마당</a>
           <ul>
-            <li>공지사항</li>
-            <li>가정통신문</li>
-            <li>일정달력</li>
-            <li>글로벌활동</li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">가정통신문</a></li>
+            <li><a href="#">일정달력</a></li>
+            <li><a href="#">글로벌활동</a></li>
           </ul>
         </li>
         <li>
@@ -67,34 +67,34 @@
         <li>
           <a href="#">학생마당</a>
           <ul>
-            <li>동아리</li>
-            <li>학생회</li>
-            <li>방과후</li>
+            <li><a href="#">동아리</a></li>
+            <li><a href="#">학생회</a></li>
+            <li><a href="#">방과후</a></li>
           </ul>
         </li>
         <li>
           <a href="#">행정공개</a>
           <ul>
-            <li>학교운영위원회</li>
-            <li>행정정보공개</li>
-            <li>행정소식</li>
+            <li><a href="#">학교운영위원회</a></li>
+            <li><a href="#">행정정보공개</a></li>
+            <li><a href="#">행정소식</a></li>
           </ul>
         </li>
         <li>
           <a href="#">학교평가</a>
           <ul>
-            <li>2015년도</li>
-            <li>2016년도</li>
-            <li>2017년도</li>
+            <li><a href="#">2015년도</a></li>
+            <li><a href="#">2016년도</a></li>
+            <li><a href="#">2017년도</a></li>
           </ul>
         </li>
         <li>
           <a href="#">교사미니홈피</a>
           <ul>
-            <li>이병찬</li>
-            <li>이미자</li>
-            <li>이영국</li>
-            <li>황한모</li>
+            <li><a href="#">이병찬</a></li>
+            <li><a href="#">이미자</a></li>
+            <li><a href="#">이영국</a></li>
+            <li><a href="#">황한모</a></li>
           </ul>
         </li>
       </ul>
@@ -122,7 +122,7 @@
         <thead>
           <tr>
             <th class="title">공지사항</th>
-            <th class="btn_th"><a href="#" class="more">더보기</a></th>
+            <th class="btn_th"><a href="#" class="more btn">더보기</a></th>
           </tr>
         </thead>
         <tbody>
@@ -159,7 +159,7 @@
         <thead>
           <tr>
             <th class="title">가정통신문</th>
-            <th class="btn_th"><a href="#" class="more">더보기</a></th>
+            <th class="btn_th"><a href="#" class="more btn">더보기</a></th>
           </tr>
         </thead>
         <tbody>
@@ -257,6 +257,7 @@
       copyright(c) 2018 박용준. All rightsreserved.
     </footer>
   </div>
+  
   <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="./js/script.js"></script>
 </body>

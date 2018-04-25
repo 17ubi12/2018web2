@@ -12,20 +12,25 @@ $('#f_plus').on('click',function () {
   $('#popimg').css({'z-index':'99999'}).animate({
     width:'500px',
     height:'500px',
-    left:$(window).scrollLeft()+($(window).width()-$('#popup_box').width())/2,
-    top:$(window).scrollTop()+($(window).height()-$('#popup_box').height())/2
+    left:$(window).scrollLeft()+($(window).width()-$('#popup_box').width())/2+15,
+    top:$(window).scrollTop()+($(window).height()-$('#popup_box').height())/2+40
   },400);
   $('#popup_mask').fadeIn(400);
-  setTimeout(function () {
+  setTimeout( function () {
     $('#f_imgbox,#popimg').removeAttr('style');
     $('#popup_box').css({
       display:'block',
       left:($(window).width()-$('#popup_box').width())/2,
       top:($(window).height()-$('#popup_box').height())/2
     });
-  },410);
-});
-
+  } ,410);
+  });
+$('#popup_mask').click(function () {
+  if($(this).is(':animated'))return false;
+  $('#f_imgbox,#popimg').removeAttr('style');
+  $(this).fadeOut();
+  $('#popup_box').fadeOut();
+})
 $(window).resize(function () {
   console.log('a');
   $('#popup_box').css({

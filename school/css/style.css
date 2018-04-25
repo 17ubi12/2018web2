@@ -2,8 +2,7 @@
 a{text-decoration: none;color:black;}
 #wrap{width: 1000px;margin:0 auto;}
 header,main,footer,#visual,#visual>img{width:100%;}
-button{border:0;}
-
+.btn{border-radius: 7px;padding:2px 8px;width: 60px;height: 28px;line-height: 24px;display: inline-block;text-align: center;font-weight: 500;font-size:13px;}
 main,footer{float:left;}
 main{height:auto;}
 main>*{margin:15px;float:left;}
@@ -16,7 +15,7 @@ nav>ul>li{float:left;height: 70px;line-height: 70px;text-align:center;width:70px
 nav>ul>li>a{color:#333;font-size:13px;text-align: center;transition: 0.5s;}
 #search_form{height: 32px;width: 198px;float:right;margin-top:20px;}
 #search_box{height: 32px;width: 150px;float: left;border:1px solid #666;border-right:1px solid transparent;padding-left:8px;}
-#search{height: 32px;float: left;cursor: pointer;}
+#search{height: 32px;width:32px;display: inline-block;cursor: pointer;}
 #search>img{height: 32px;}
 /* subheader */
 #subheader,#subheader>ul,#subheader>ul>li{height:50px;background:#fff;}
@@ -26,6 +25,7 @@ nav>ul>li>a{color:#333;font-size:13px;text-align: center;transition: 0.5s;}
   opacity: 0;
   width:100%;transition: 0.3s;z-index: 9999;}
 #subheader>ul>li>ul>li{width:100%;height:40px;z-index: 9999;text-align: center;line-height: 30px;background:white;transition: 0.3s;}
+#subheader>ul>li>ul>li>a{display: inline-block;width:100%;height: 100%;}
 #subheader>ul>li:hover{border-bottom:3px solid rgb(21, 94, 205);}
 #subheader>ul>li:hover>ul{opacity: 1;}
 #subheader>ul>li:hover>a{color:rgb(16, 73, 159);}
@@ -56,9 +56,9 @@ th{height:50px;}
 th.title{text-align:left;font-size: 20px;font-weight: bold;padding-left: 8px;}
   td.title{max-width: 200px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0 10px;}
 .more{
-  border-radius: 7px;border:1px solid rgb(47, 102, 194);background:rgb(66, 133, 247);color:#fff;
-  padding:5px 8px;width: 60px;height: 30px;display: inline-block;
-  transition: 0.5s;text-align: center;font-weight: 500;font-size:13px;}
+  border:1px solid rgb(47, 102, 194);background:rgb(66, 133, 247);color:#fff;
+
+  transition: 0.5s;}
 .more:hover{background:rgb(30, 70, 138);}
 .btn_th{text-align: right;padding-right:10px;}
 /* 급식 */
@@ -85,13 +85,20 @@ th.title{text-align:left;font-size: 20px;font-weight: bold;padding-left: 8px;}
 #popup_box{
   position: fixed;z-index: 99999;
   display: none;
-  width: 500px;height:500px;
+  width: 530px;height:600px;
+  background:#fff;
+}
+#popup_head{
+  height:40px;
+
 }
 #popup_box>#popup_img{
-  /* width:400px;height:400px; */
   width: 500px;height:500px;
-  /* margin:15px auto 0; */
+  margin:0 auto;
   display: block;}
+  .write{
+    border:1px solid black;
+  }
 /* 급식 팝업 */
 /* 스케줄 */
 #schedule{width: 270px;height: 260px;}

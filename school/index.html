@@ -10,12 +10,24 @@
 </head>
 
 <body>
+  <div id="popup_box">
+    <!-- <div id="popup_head">
+      <span>Today's 급식</span>
+      <span></span>
+    </div> -->
+    <img src="./image/food.jpg" alt="popupimg" id="popup_img">
+    <div id="comment_box">
+      <input type="text" placeholder="Write a comment">
+      <a href="#">작성</a>
+    </div>
+  </div>
+  <div id="popup_mask"></div>
   <div id="wrap">
     <header>
       <a href="#" id="logo">
                 <img src="./image/logo.png" alt="logo">
             </a>
-      <form action="" id="search_form" method="get">
+      <form action="./index.html'" id="search_form" method="get">
         <input type="text" name="search" placeholder="search.." id="search_box">
         <button id="search" type="submit"><img src="./image/dot.gif" alt="돋보기"></button>
       </form>
@@ -110,7 +122,7 @@
         <thead>
           <tr>
             <th class="title">공지사항</th>
-            <th class="btn_th"><a href="#"><button class="more">더보기</button></a></th>
+            <th class="btn_th"><a href="#" class="more">더보기</a></th>
           </tr>
         </thead>
         <tbody>
@@ -147,7 +159,7 @@
         <thead>
           <tr>
             <th class="title">가정통신문</th>
-            <th class="btn_th"><a href="#"><button class="more">더보기</button></a></th>
+            <th class="btn_th"><a href="#" class="more">더보기</a></th>
           </tr>
         </thead>
         <tbody>
@@ -180,9 +192,12 @@
       <div id="food">
         <div id="f_head">
           <span id="f_id">Today's 급식</span>
-          <a href="#" id="f_plus"><img src="./image/plus.png" alt=""></a>
+          <img src="./image/plus.png" alt="plus" id="f_plus">
         </div>
-        <div id="f_imgbox"><img src="./image/food.jpg" alt=""></div>
+        <div id="f_imgbox">
+          <img src="./image/food.jpg" alt="img">
+          <img src="./image/food.jpg" alt="img" id="popimg">
+        </div>
         <div id="f_box">
           <p>2018-04-16 (월)</p>
           치즈스파게티, 쌕쌕, 보쌈, BBQ황금올리브치킨, 역전우동

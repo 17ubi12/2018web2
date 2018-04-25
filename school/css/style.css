@@ -55,7 +55,10 @@ nav>ul>li>a{color:#333;font-size:13px;text-align: center;transition: 0.5s;}
 th{height:50px;}
 th.title{text-align:left;font-size: 20px;font-weight: bold;padding-left: 8px;}
   td.title{max-width: 200px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0 10px;}
-.more{border-radius: 7px;border:1px solid rgb(47, 102, 194);background:rgb(66, 133, 247);color:#fff;padding:5px 8px;transition: 0.5s;text-align: right;padding-right:10px;}
+.more{
+  border-radius: 7px;border:1px solid rgb(47, 102, 194);background:rgb(66, 133, 247);color:#fff;
+  padding:5px 8px;width: 60px;height: 30px;display: inline-block;
+  transition: 0.5s;text-align: center;font-weight: 500;font-size:13px;}
 .more:hover{background:rgb(30, 70, 138);}
 .btn_th{text-align: right;padding-right:10px;}
 /* 급식 */
@@ -65,13 +68,31 @@ th.title{text-align:left;font-size: 20px;font-weight: bold;padding-left: 8px;}
 }
 #f_head{height:32px;}
   #f_id{padding:5px 0 0 5px;font-size:16px;float:left;}
-  #f_plus{float:right;width:21px;}
-  #f_plus>img{height:inherit;width:inherit;padding:5px 5px 0 0;}
-#f_imgbox{height: 150px;width: 150px;margin:4px auto;}
-#f_imgbox>img{height: 150px;width: 150px;}
+  #f_plus{float:right;width:21px;height:21px;padding:5px 5px 0 0;cursor: pointer;}
+#f_imgbox{height: 150px;width: 150px;margin:4px auto;position: relative;}
+#f_imgbox>img{height: 150px;width: 150px;position: absolute;}
+#popimg{position: absolute;}
 #f_box{color:#555555;font-size: 14px;padding:0 8px;margin-top:6px;}
 #f_box>p{color:#000000;font-size:16px;padding-bottom:4px;}
 /* 급식 */
+/* 급식 팝업 */
+#popup_mask{
+  position: fixed;
+  z-index: 9999;
+  background:rgba(0,0,0,0.74);
+  display: none;
+}
+#popup_box{
+  position: fixed;z-index: 99999;
+  display: none;
+  width: 500px;height:500px;
+}
+#popup_box>#popup_img{
+  /* width:400px;height:400px; */
+  width: 500px;height:500px;
+  /* margin:15px auto 0; */
+  display: block;}
+/* 급식 팝업 */
 /* 스케줄 */
 #schedule{width: 270px;height: 260px;}
 #s_head{height:32px;}

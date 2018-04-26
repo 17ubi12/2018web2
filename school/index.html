@@ -12,13 +12,42 @@
 <body>
   <div id="popup_box">
     <div id="popup_head">
-      <span>Today's 급식</span>
-      <span></span>
+      <div class="box">
+        <span>Today's 급식</span>
+        <span id="popup_down">X</span>
+      </div>
     </div>
-    <img src="./image/food.jpg" alt="popupimg" id="popup_img">
-    <div id="comment_box">
-      <input type="text" placeholder="Write a comment">
-      <a href="#" class="btn write">작성</a>
+    <div id="popup_imgbox">
+      <div class="box">
+        <img src="./image/food.png" alt="popupimg" id="popup_img">
+      </div>
+    </div>
+      <div id="recommend_box">
+        <div class="box">
+          <div class="btn_wrap">
+            <button id="good" class="btn">Good<span>0</span></button>
+            <button id="bad" class="btn">Bad<span>0</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="comment_box">
+        <div class="box">
+          <div id="write_box">
+            <input type="text" placeholder="Write a comment.." class="text_box">
+            <a href="#" class="btn write">작성</a>
+          </div>
+          <div id="comments">
+            <div>
+                <span class="comments_id">id</span>
+                <span class="comments_comments">Comments</span>
+            </div>
+            <div>
+                <span class="comments_id">ex)박용준</span>
+                <span class="comments_comments">넘모 맛있어요.</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div id="popup_mask"></div>
@@ -35,7 +64,7 @@
         <ul>
           <li><a href="#">사이트맵</a></li>
           <li><a href="#">홈</a></li>
-          <li><a href="#">로그인</a></li>
+          <li><a href="#" id="login">로그인</a></li>
           <li><a href="#">회원가입</a></li>
         </ul>
       </nav>
@@ -100,18 +129,7 @@
       </ul>
     </div>
     <div id="visual">
-      <!-- <div id="vtext">WELCOME!</div> -->
-      <!-- <ul> -->
-        <!-- <li> -->
-          <img src="./image/1img.png" alt="1">
-        <!-- </li> -->
-        <!-- <li>
-          <img src="./image/2img.jpg" alt="2">
-        </li>
-        <li>
-          <img src="./image/3img.jpg" alt="3">
-        </li> -->
-      <!-- </ul> -->
+      <img src="./image/1img.png" alt="1">
     </div>
     <main>
       <table id="notice">
@@ -192,11 +210,14 @@
       <div id="food">
         <div id="f_head">
           <span id="f_id">Today's 급식</span>
-          <img src="./image/plus.png" alt="plus" id="f_plus">
+          <div id="f_plus_box">
+            <img src="./image/plus.png" alt="plus" id="f_plus">
+            <span class="tooltip">Let's talking!</span>
+          </div>
         </div>
         <div id="f_imgbox">
-          <img src="./image/food.jpg" alt="img">
-          <img src="./image/food.jpg" alt="img" id="popimg">
+          <img src="./image/food.png" alt="img">
+          <img src="./image/food.png" alt="img" id="popimg">
         </div>
         <div id="f_box">
           <p>2018-04-16 (월)</p>
@@ -257,7 +278,7 @@
       copyright(c) 2018 박용준. All rightsreserved.
     </footer>
   </div>
-  
+
   <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="./js/script.js"></script>
 </body>
